@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habilitar y Deshabilitar Campo de Texto</title>
+    <style>
+      input[disabled] {
+        background-color: #f0f0f0;
+        cursor: not-allowed;
+        border: 1px solid #ccc;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Mi curso javascript</h1>
+
+    <p>Desarrollo de Software</p>
+    <p>Curso 3k10</p>
+    <p>Año 2024</p>
+    <button onclick="cambiarColor()">Cambiar color de los párrafos</button>
+
+    <h1>Formulario Simple</h1>
+
+  <form id="formularioAlerta">
+    <label for="texto">Ingrese un texto:</label>
+    <input type="text" id="texto" name="texto">
+    <button type="button" onclick="mostrarAlerta()">Mostrar alerta</button>
+  </form>
+
+  <ul id="miLista">
+    <li>Manzana</li>
+    <li>Banana</li>
+    <li>Pera</li>
+    <li>Kiwi</li>
+    <li>Pomelo</li>
+  </ul>
+
+  <h1>Habilitar y Deshabilitar Campo de Texto</h1>
+
+  <input type="text" id="campoTexto" placeholder="Escribe algo aquí...">
+
+  <button onclick="deshabilitarCampo()">Deshabilitar</button>
+  <button onclick="habilitarCampo()">Habilitar</button>
+
+  <h1>Formulario de correo</h1>
+
+  <form id="formCorreo">
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <div id="correoGuardado"></div>
+
+  <button id="eliminarCorreo" style="display:none;">Eliminar correo</button>
+  
+  <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
